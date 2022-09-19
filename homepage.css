@@ -1,7 +1,8 @@
+/* TODO: Scroll Snap between sections */
 /* html{
   scroll-snap-type: y mandatory;
-} */
-/* .section{
+}
+.section{
   block-size: 90vh;
   scroll-snap-align: center;
   scroll-snap-stop: always;
@@ -56,7 +57,13 @@ p {font-size: 16px;}
   scroll-snap-stop: always;
   display: grid;
   place-items: center;
+  z-index: 2;
 }
 .navbar-nav  li a:hover {
   color: #1abc9c !important;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
