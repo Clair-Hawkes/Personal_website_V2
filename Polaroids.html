@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numbers API</title>
+  <script src="https://unpkg.com/jquery"></script>
+  <link rel="stylesheet" href="Polaroids.css">
+
+</head>
+<body>
+
+
+  <div class="background z0">
+    <!--
+      TODO: CUrrent project.
+      Bring the current BUTTONS and TITLE Above the background.
+    -->
+
+    <!-- THINKING SPACE
+    CALL yoUR SHOt BABY. I'm Proud of You!!!
+  Attempt to bring the title and buttons ontop of the clip-path
+      1. Bring the Z-Index of the h1 & divs on top of via z-index.
+      1a. Attempted multiple times no effect.
+      2. Move the title and buttons out of the background DIV.
+ -->
+
+</div>
+<h1 id = "snapshot" class="z-index z1">Polaroids! </h1><h1> | </h1>
+<h1 id = "draw" class="z-index z1">Draw a Card!</h1>
+<!-- <img id="polaroidCameraImg" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Polaroid_SX-70_%284462345243%29.jpg"></h1> -->
+<!-- <button id="draw" class="z1">Draw a card!</button> -->
+<!-- <button id="snapshot" class="z-index z1">Take a photo!</button> -->
+<section id="placedcards" class="z1"></section>
+<section id="placeAll" class="z1"></section>
+<section id="placedPolaroids"></section>
+
+
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="Polaroids.js"></script>
+  <!-- Simple audio playback -->
+  <!-- <audio src="./polaroid-camera-take-picture-01.mp3" autoplay>
+  <a href="AudioTest.ogg">Download OGG audio</a>.
+</audio> -->
+
+<audio id="polaroidCameraSound"
+controls
+src="./polaroid-camera-take-picture-01.mp3">
+    <a href="/media/cc0-audio/t-rex-roar.mp3">
+        Download audio
+    </a>
+</audio>
+
+</body>
+</html>
